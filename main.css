@@ -1,0 +1,46 @@
+h1{
+    margin: .3em .3em .3em .3em;
+    font-size: 1.7em;
+    color: #103d50;
+    font-family: 'Lora', serif;
+    }
+h2{
+    margin: .3em .3em .3em .3em;
+    font-size: 1.25em;
+    color: #103d50;
+    font-family: 'Lora', serif;
+    }
+
+.picture{
+    display: inline-block;
+    height: 10em;
+    width: 11m;
+    }
+.icon{
+    height: 2em;
+    width: 2em;
+    margin: 0em 0em .8em 0em;
+}
+ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f0f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+
