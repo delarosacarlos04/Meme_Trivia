@@ -21,26 +21,56 @@ h2{
     width: 2em;
     margin: 0em 0em .8em 0em;
 }
-ul {
-    display: inline-block;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f0f1f1;
+
+.button{
+    width: 13em;
+    height: 5em;
 }
 
-li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
+.category{
+    width: 13em;
+    height: 5em;
+    
+}
+.category-group button {
+    background-color:  #964400; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+.category-group:after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-/* Change the link color on hover */
-li a:hover {
-    background-color: #555;
-    color: white;
+
+
+.btn-group button {
+    background-color: 	#488000; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #3e8e41;
 }
 
 
