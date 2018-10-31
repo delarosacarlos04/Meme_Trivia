@@ -5,7 +5,7 @@ h1{
     font-family: 'Lora', serif;
     }
 h2{
-    margin: .3em .3em .3em .3em;
+    margin: .3em .3em .3em 3em;
     font-size: 1.25em;
     color: #103d50;
     font-family: 'Lora', serif;
@@ -13,6 +13,7 @@ h2{
 
 .picture{
     display: inline-block;
+    margin: 0em 0em 0em 8em ;
     height: 10em;
     width: 11m;
     }
@@ -25,13 +26,19 @@ h2{
 .button{
     width: 13em;
     height: 5em;
+    display: inline;
 }
 
 .category{
     width: 13em;
-    height: 5em;
+    height: 5em;    
+}
+
+.grid{
+    margin: 0em 0em 0em 8em ;
     
 }
+
 .category-group button {
     background-color:  #964400; /* Green background */
     border: 1px solid green; /* Green border */
@@ -39,6 +46,7 @@ h2{
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
     float: left; /* Float the buttons side by side */
+    display: inline;
 }
 .category-group:after {
     content: "";
@@ -55,6 +63,7 @@ h2{
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
     float: left; /* Float the buttons side by side */
+    display: inline;
 }
 
 /* Clear floats (clearfix hack) */
