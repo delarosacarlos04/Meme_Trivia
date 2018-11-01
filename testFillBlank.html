@@ -1,11 +1,14 @@
 <h1>Which meme contains a frog?</h1><br>
 <form >
-<input type="text" id="answer"><br>
+<input type="text" id="answer" autofocus="autofocus"  onkeydown="if (event.keyCode == 13) document.getElementById('submitButton').click()" ><br>
+
 </form>
-<button onclick="submitAnswer()">Submit Answer</button> 
+<button id="submitButton" onclick="submitAnswer()">Submit Answer</button> 
 
 
 <script>
+        
+    
     function submitAnswer() {
 
     var userAnswer = answer.value;
