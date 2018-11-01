@@ -1,0 +1,29 @@
+<h1>Which meme contains a frog?</h1><br>
+<form >
+<input type="text" id="answer"><br>
+</form>
+<button onclick="submitAnswer()">Submit Answer</button> 
+
+
+<script>
+    function submitAnswer() {
+
+    var userAnswer = answer.value;
+  
+  // if user click submit button without selecting any option, alert box should be say "please select choice answer".
+  if(userAnswer == "") {
+    alert("Please type an answer.");
+    return;
+  }
+  // Correct answer
+  if(userAnswer == "Pepe") {
+     alert("Answer is correct!");
+  }
+  // incorrect answer
+  else {
+     alert("Answer is wrong!");
+  }
+  
+}
+
+</script>
