@@ -5,12 +5,10 @@
 </form>
 <button id="submitButton" onclick="submitAnswer()">Submit Answer</button> 
 
-
-<script>
-        
+   <script src="main.js"></script> 
+   <script>
     
     function submitAnswer() {
-
     var userAnswer = answer.value;
   
   // if user click submit button without selecting any option, alert box should be say "please select choice answer".
@@ -20,15 +18,16 @@
   }
   // Correct answer
   if(userAnswer == "Pepe") {
-      alert("Answer is correct!");
-      location.href = "index.html"
-  }
+        alert("Answer is correct!");
+        addPoints("user1Points", 200);
+        location.href = "index.php";
+        }
   // incorrect answer
   else {
       alert("Answer is wrong!");
-      location.href = "index.html"
+      location.href = "index.php"
   }
   
 }
 
-</script>
+    </script>
