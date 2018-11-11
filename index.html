@@ -8,9 +8,28 @@
      
     </head>
 <body>
-   <?php
-       session_start();
+    
+    <?php
+    
+    if(!isset($_COOKIE["user1Points"])){
+        setcookie("user1Points", "0", time() + (200));
+        setcookie("user2Points", "0", time() + (200));
+        setcookie("player", "user1Points", time() + (200));
+    }   
    ?>
+    
+    
+    <script src="main.js"></script>
+    <script>
+        var player = getCookie("player")
+        if(player == "user1Points"){
+          alert('Player 1, Your Turn to Pick!')
+        }
+        if(player == "user2Points"){
+            alert('Player 2, Your Turn to Pick!')
+        }
+            
+    </script>
    
    
    
