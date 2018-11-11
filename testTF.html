@@ -4,12 +4,19 @@
 <button onclick="falseAnswer()">False</button> 
 
 <script>
+    
+    // implementation of unit test to test correct inputs
+    if (x==true || x=='T' || x=='t'|| x=='True'|| x=='true'|| x==false|| x=='false'|| x=='F'|| x=='False'|| x=='f'){
+        console.log('valid');
+    }
+    else{
+        console.log('invalid');
+    }
+    
     function trueAnswer() {
-        alert("Answer is correct!");
-        location.href = "index.html"
+  alert("Answer is correct!");
      }
   function falseAnswer(){
       alert("Answer is wrong!");
-      location.href = "index.html"
   }
 </script>
