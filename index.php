@@ -23,12 +23,12 @@
     <script>
         var player = getCookie("player")
         if(player == "user1Points"){
-            alert('Player 1, Your Turn to Pick!')
+          alert('Player One, Your Turn to Pick!');
         }
         if(player == "user2Points"){
-            alert('Player 2, Your Turn to Pick!')
+            alert('Player Two, Your Turn to Pick!');
         }
-            
+        
     </script>
    
    
@@ -38,6 +38,16 @@
     <h1>  <img src="picture/mtIcon.png" alt=" MT Icon" class="icon" width="50" height="50" align="middle"> Meme Trivia </h1>
     
     <h2>Test your knowledge of meme culture. </h2>
+    
+    <script> 
+        
+        points1 = getCookie('user1Points');
+        points2 = getCookie('user2Points');
+        
+        document.write("Player One points: " + points1 + "<br>" );
+        document.write("Player Two points: " + points2);
+    
+    </script>
     
     
     
