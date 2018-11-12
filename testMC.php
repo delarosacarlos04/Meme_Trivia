@@ -68,7 +68,11 @@
             location.href = "index.php";
   }
         if(userAnswer == 1) {
-            alert("Test");
+            alert("Answer is correct!");
+            var name = getCookie("player")
+            addPoints(name, 200);
+            switchPlayer();
+            location.href = "index.php";
         }
         // incorrect answer
         else {
