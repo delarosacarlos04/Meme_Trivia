@@ -1,0 +1,28 @@
+<h1>SpongeGar was introduced in 2004 as a prehistoric ancestor of Spongebob Squarepants.</h1><br>
+
+<button onclick="trueAnswer()">True</button> 
+<button onclick="falseAnswer()">False</button> 
+
+<script>
+    
+    // implementation of unit test to test correct inputs
+    if (x==true || x=='T' || x=='t'|| x=='True'|| x=='true'|| x==false|| x=='false'|| x=='F'|| x=='False'|| x=='f'){
+        console.log('valid');
+    }
+    else{
+        console.log('invalid');
+    }
+    
+    function trueAnswer() {
+        alert("Answer is correct!");
+        var name = getCookie("player")
+        addPoints(name, 200);
+        switchPlayer();
+        location.href = "index.php";
+    }
+    function falseAnswer(){
+        alert("Answer is wrong!");
+        switchPlayer();
+        location.href = "index.php";
+    }
+</script>
