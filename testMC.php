@@ -62,14 +62,20 @@
         // Correct answer
         if(userAnswer == "Pepe") {
             alert("Answer is correct!");
-        }
+            var name = getCookie("player")
+            addPoints(name, 200);
+            switchPlayer();
+            location.href = "index.php";
+  }
         if(userAnswer == 1) {
             alert("Test");
         }
         // incorrect answer
         else {
             alert("Answer is wrong!");
-        }
+            switchPlayer();
+            location.href = "index.php";
+  }
     }
     buildQuestion();
 </script>
