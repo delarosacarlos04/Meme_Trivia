@@ -1,0 +1,44 @@
+<h1>What is the last name of the artist that created Pepe the Frog?</h1><br>
+<form >
+<input type="text" id="answer" autofocus="autofocus" onkeydown = "if (event.keyCode == 13) document.getElementById('submitButton').click()"><br>
+</form>
+<button id="submitButton" onclick="submitAnswer()">Submit Answer</button> 
+
+
+<script>
+    
+    function submitAnswer() {
+
+    var userAnswer = answer.value;
+    
+    // implementation of unit tested code to check if answer form is accepted
+    // logs in the console (F12) whether answer is valid or invalid
+    if (isNaN(userAnswer)){
+        console.log('valid');
+    } 
+    else{
+        console.log('invalid');
+   }
+  
+  // Blank answer check
+  if(userAnswer == "" ) {
+    alert("Please type an answer.");
+    //return;
+  }
+  // Correct answer check
+  if(userAnswer == "Furie" || userAnswer=='furie'|| userAnswer=='FURIE') {
+     alert("Answer is correct!");
+      var name = getCookie("player")
+        addPoints(name, 200);
+        switchPlayer();
+        location.href = "index.php";
+  }
+  // Incorrect answer check
+  else {
+     alert("Answer is wrong!");
+      switchPlayer();
+        location.href = "index.php";
+  }
+    }
+
+</script>
