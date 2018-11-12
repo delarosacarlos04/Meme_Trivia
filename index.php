@@ -64,7 +64,7 @@
           <button class="button"  >100</button>
           <button class="button" onclick="this.disabled=true; location.href='testTF.html'">100</button>
           <button class="button" onclick="location.href='testMC.php'" >100</button>
-          <button class="button" >100</button>
+          <button class="button" onclick="location.href='UT_Memes_100.html'">100</button>
         </div>
 
         <div class="btn-group" >
