@@ -1,0 +1,20 @@
+<h1>Does Jim marry Karen?</h1><br>
+
+<button onclick="trueAnswer()">True</button> 
+<button onclick="falseAnswer()">False</button> 
+
+<script src="main.js"></script> 
+<script>
+    function falseAnswer() {
+        alert("Answer is correct!");
+        var name = getCookie("player")
+        addPoints(name, 200);
+        //switchPlayer();
+        location.href = "index.php";
+     }
+  function trueAnswer(){
+      alert("Answer is wrong!");
+      //switchPlayer();
+      location.href = "index.php";
+  }
+</script>
