@@ -6,10 +6,14 @@
 <script>
     function trueAnswer() {
         alert("Answer is correct!");
-        location.href = "index.html"
+        var name = getCookie("player")
+        addPoints(name, 200);
+        switchPlayer();
+        location.href = "index.php";
      }
   function falseAnswer(){
       alert("Answer is wrong!");
-      location.href = "index.html"
+      switchPlayer();
+      location.href = "index.php";
   }
 </script>
