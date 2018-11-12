@@ -78,7 +78,7 @@
         <div class="btn-group" >
           <button class="button" >300</button>
           <button class="button" onclick="location.href='spongeQuestion300.html'">300</button>
-          <button class="button" >300</button>
+          <button class="button" onclick="location.href='pepeQuestion300.html'">300</button>
           <button class="button" onclick="location.href='UT_Memes_300.php'">300</button>
 
         </div>
@@ -86,7 +86,7 @@
         <div class="btn-group">
           <button class="button" >400</button>
           <button class="button" onclick="location.href='spongeQuestion400.html'">400</button>
-          <button class="button" >400</button>
+          <button class="button" onclick="location.href='pepeQuestion400.html'">400</button>
           <button class="button" onclick="location.href='UT_Memes_400.html'">400</button>
         </div>
     </div>
