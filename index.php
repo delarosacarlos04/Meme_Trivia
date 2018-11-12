@@ -61,14 +61,14 @@
         </div>
 
         <div class="btn-group" >
-          <button class="button"  >100</button>
+          <button class="button" onclick="location.href='The_Office_100.html'">100</button>
           <button class="button" onclick="this.disabled=true; location.href='testTF.html'">100</button>
           <button class="button" onclick="location.href='testMC.php'" >100</button>
           <button class="button" onclick="location.href='UT_Memes_100.html'">100</button>
         </div>
 
         <div class="btn-group" >
-          <button class="button" >200</button>
+          <button class="button" onclick="location.href='The_Office_200.html'">200</button>
           <button class="button" onclick="location.href='spongeQuestion200.html'">200</button>
           <button class="button" onclick="location.href='testFillBlank.html'" >200</button>
           <button class="button" onclick="location.href='UT_Memes_200.html'">200</button>
@@ -84,7 +84,7 @@
         </div>
 
         <div class="btn-group">
-          <button class="button" >400</button>
+          <button class="button" onclick="location.href='The_Office_400.html'">400</button>
           <button class="button" onclick="location.href='spongeQuestion400.html'">400</button>
           <button class="button" onclick="location.href='pepeQuestion400.html'">400</button>
           <button class="button" onclick="location.href='UT_Memes_400.html'">400</button>
