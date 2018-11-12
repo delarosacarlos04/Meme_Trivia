@@ -1,0 +1,20 @@
+<h1>Michael Scott is the name of the boss in The Office.</h1><br>
+
+<button onclick="trueAnswer()">True</button> 
+<button onclick="falseAnswer()">False</button> 
+
+<script src="main.js"></script> 
+<script>
+    function trueAnswer() {
+        alert("Answer is correct!");
+        var name = getCookie("player")
+        addPoints(name, 200);
+        //switchPlayer();
+        location.href = "index.php";
+     }
+  function falseAnswer(){
+      alert("Answer is wrong!");
+      //switchPlayer();
+      location.href = "index.php";
+  }
+</script>
