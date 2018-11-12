@@ -1,0 +1,33 @@
+<h1>Finish the quote: I'm not superstitious, but I am a little ________.</h1><br>
+<form>
+<input type="text" id="answer" autofocus="autofocus"  onkeydown="if (event.keyCode == 13) document.getElementById('submitButton').click()" ><br>
+
+</form>
+<button id="submitButton" onclick="submitAnswer()">Submit Answer</button> 
+
+   <script src="main.js"></script> 
+   <script>
+    
+    function submitAnswer() {
+    var userAnswer = answer.value;
+  
+  // if user click submit button without selecting any option, alert box should be say "please select choice answer".
+  if(userAnswer == "") {
+    alert("Please type an answer.");
+    return;
+  }
+  // Correct answer
+  if(userAnswer == "stitious") {
+        alert("Answer is correct!");
+        addPoints(getCookie("player"), 300);
+        location.href = "index.php";
+        }
+  // incorrect answer
+  else {
+      alert("Answer is wrong!");
+      location.href = "index.php";
+  }
+  
+}
+
+    </script>
