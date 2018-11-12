@@ -69,7 +69,7 @@
 
         <div class="btn-group" >
           <button class="button" >200</button>
-          <button class="button" >200</button>
+          <button class="button" onclick="location.href='spongeQuestion200.html'">200</button>
           <button class="button" onclick="location.href='testFillBlank.html'" >200</button>
           <button class="button" >200</button>
 
@@ -77,7 +77,7 @@
 
         <div class="btn-group" >
           <button class="button" >300</button>
-          <button class="button" >300</button>
+          <button class="button" onclick="location.href='spongeQuestion300.html'">300</button>
           <button class="button" >300</button>
           <button class="button" >300</button>
 
@@ -85,7 +85,7 @@
 
         <div class="btn-group">
           <button class="button" >400</button>
-          <button class="button" >400</button>
+          <button class="button" onclick="location.href='spongeQuestion400.html'">400</button>
           <button class="button" >400</button>
           <button class="button" >400</button>
         </div>
