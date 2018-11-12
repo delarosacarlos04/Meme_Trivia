@@ -5,29 +5,31 @@
 </form>
 <button id="submitButton" onclick="submitAnswer()">Submit Answer</button> 
 
-   <script src="main.js"></script> 
-   <script>
-    
-    function submitAnswer() {
-    var userAnswer = answer.value;
-  
-  // if user click submit button without selecting any option, alert box should be say "please select choice answer".
-  if(userAnswer == "") {
-    alert("Please type an answer.");
-    return;
-  }
-  // Correct answer
-  if(userAnswer == "Pepe") {
-        alert("Answer is correct!");
-        addPoints("user1Points", 200);
-        location.href = "index.php";
+<script src="main.js"></script> 
+    <script>
+        function submitAnswer(){
+        var userAnswer = answer.value;
+ 
+        // if user click submit button without selecting any option, alert box should be say "please select choice answer".
+        if(userAnswer == "") {
+            alert("Please type an answer.");
+            return;
         }
+        
+  // Correct answer
+        if(userAnswer == "Pepe") {
+            alert("Answer is correct!");
+            var name = getCookie("player")
+            addPoints(name, 200);
+            switchPlayer()
+            location.href = "index.php";
+            }
   // incorrect answer
-  else {
-      alert("Answer is wrong!");
-      location.href = "index.php"
+        else {
+            alert("Answer is wrong!");
+            switchPlayer()
+            location.href = "index.php"
   }
-  
 }
 
-    </script>
+</script>
