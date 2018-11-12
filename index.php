@@ -76,7 +76,7 @@
         </div>
 
         <div class="btn-group" >
-          <button class="button" >300</button>
+          <button class="button" onclick="location.href='The_Office_300.html'">300</button>
           <button class="button" onclick="location.href='spongeQuestion300.html'">300</button>
           <button class="button" onclick="location.href='pepeQuestion300.html'">300</button>
           <button class="button" onclick="location.href='UT_Memes_300.php'">300</button>
