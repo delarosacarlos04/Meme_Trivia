@@ -21,3 +21,14 @@ function addPoints(key, qValue){
         document.cookie = key + "=" + x;
     
 }
+
+function switchPlayer(){
+    var x = getCookie(player)
+    if(x == 'user1Points'){
+        document.cookie = "player= user2Points"
+    }
+    else if(x == 'user2Points'){
+        document.cookie = "player= user1Points" ;
+    }
+    
+}

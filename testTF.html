@@ -14,9 +14,15 @@
     }
     
     function trueAnswer() {
-  alert("Answer is correct!");
-     }
-  function falseAnswer(){
-      alert("Answer is wrong!");
-  }
+        alert("Answer is correct!");
+        var name = getCookie("player")
+        addPoints(name, 200);
+        switchPlayer();
+        location.href = "index.php";
+    }
+    function falseAnswer(){
+        alert("Answer is wrong!");
+        switchPlayer();
+        location.href = "index.php";
+    }
 </script>
